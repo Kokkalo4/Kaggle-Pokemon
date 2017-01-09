@@ -11,7 +11,7 @@ library(Hmisc)
 library(corrplot)
 
 #read file
-pokedat <- read.csv("c:/users/alex/desktop/R/exercise data/pokemon/pokemon.csv", header = T)
+pokedat <- read.csv(".../input/pokemon.csv", header = T)
 
 #structure of data
 str(pokedat)
