@@ -1,0 +1,25 @@
+---
+title: "Pokemon -- Plotting Correlations"
+output: html_document
+---
+
+```{r read file}
+pokedat <- read.csv("../pokemon/pokemon.csv", header = T)
+```
+
+6.3 Plotting correlations between variables
+  6.3.1. Plot Total ~ Attack
+```{r}
+qplot(Total, Attack, data = pokedat) + stat_smooth(method = "lm", se = FALSE , colour = "red" ) +
+  labs(x= "Total",y= "Attack" , title = "Total ~ Attack")  
+```
+  6.3.2. Plot Total ~ Sp.Attack
+```{r}
+qplot(Total, Sp..Atk, data = pokedat) + stat_smooth(method = "lm", se = FALSE , colour = "red" ) +
+  labs(x= "Total",y= "Sp..Attack" , title = "Total ~ Sp..Atk")  
+```
+  6.3.3. Plot Total ~ Sp.Def
+```{r}
+qplot(Total, Sp..Def, data = pokedat) + stat_smooth(method = "lm", se = FALSE , colour = "red" ) +
+  labs(x= "Total",y= "Sp..Def" , title = "Total ~ Sp..Def")  
+```
