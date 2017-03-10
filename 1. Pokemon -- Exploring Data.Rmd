@@ -1,0 +1,30 @@
+---
+title: "Pokemon -- Exploring Data"
+output: html_document
+---
+
+#ABOUT DATA:
+This data set includes 721 Pokemon, including their number, name, first and second type, and basic stats: HP, Attack, Defense, Special Attack, Special Defense, and Speed. It has been of great use when teaching statistics to kids.
+With certain types you can also give a geeky introduction to machine learning.
+
+1. Loading the required libraries
+```{r load libraries, echo=FALSE} 
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(Hmisc)
+library(corrplot)
+```
+
+2. Read the data
+```{r read file}
+pokedat <- read.csv("../pokemon/pokemon.csv", header = T)
+```
+
+3. Inspectiong the structure of data
+```{r data structure}
+str(pokedat)
+describe(pokedat)
+head(pokedat)
+tail(pokedat)
+```
