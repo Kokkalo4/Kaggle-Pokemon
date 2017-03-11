@@ -1,7 +1,7 @@
 # Kaggle-Pokemon
 The purpose of this project is to perform an exploratory data analysis on the PokemonGo dataset. An in depth description of the data, variables and statistics can be found on Kaggle website where the data were obtained: [Pokemon with Stats dataset](https://www.kaggle.com/abcsds/pokemon)
 
-- **Input Data:** 
+- **Input Data:**<br> 
 From Kaggle: [Pokemon with Stats](https://www.kaggle.com/abcsds/pokemon/downloads/Pokemon.csv)<br>
 From Github: [Pokemon with Stats](https://github.com/Kokkalo4/Kaggle-Pokemon/blob/master/Pokemon.csv)
 
